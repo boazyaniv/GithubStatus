@@ -8,7 +8,7 @@ function personController($scope, $http){
     $scope.body = data.body;
     $scope.createdOn = data.created_on;
 
-  }).error(function(data, status, headers, config) {
+  }).error(function(status) {
     $scope.status="Failed getting the status";
   })
 };
